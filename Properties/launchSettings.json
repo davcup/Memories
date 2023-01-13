@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SyncFiles": {
+      "commandName": "Project",
+      "commandLineArgs": "-p \"E:\\Users\\davide\\Pictures\" -fake"
+    }
+  }
+}

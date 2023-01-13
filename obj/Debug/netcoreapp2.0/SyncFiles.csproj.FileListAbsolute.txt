@@ -1,0 +1,13 @@
+C:\Prjs\Anonima\SyncFiles\SyncFiles\bin\Debug\netcoreapp2.0\SyncFiles.deps.json
+C:\Prjs\Anonima\SyncFiles\SyncFiles\bin\Debug\netcoreapp2.0\SyncFiles.runtimeconfig.json
+C:\Prjs\Anonima\SyncFiles\SyncFiles\bin\Debug\netcoreapp2.0\SyncFiles.runtimeconfig.dev.json
+C:\Prjs\Anonima\SyncFiles\SyncFiles\bin\Debug\netcoreapp2.0\SyncFiles.dll
+C:\Prjs\Anonima\SyncFiles\SyncFiles\bin\Debug\netcoreapp2.0\SyncFiles.pdb
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.csproj.AssemblyReference.cache
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.AssemblyInfoInputs.cache
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.AssemblyInfo.cs
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.csproj.CoreCompileInputs.cache
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.dll
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.pdb
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.genruntimeconfig.cache
+C:\Prjs\Anonima\SyncFiles\SyncFiles\obj\Debug\netcoreapp2.0\SyncFiles.GeneratedMSBuildEditorConfig.editorconfig
