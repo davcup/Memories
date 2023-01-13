@@ -17,7 +17,7 @@ namespace SyncFiles
 {
     class Program
     {
-        static string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=memoriesanonima;AccountKey=J/mhCAFAN0jlFyZ4ZBKzKOhzEECHEatt9etV2SgUqBVfxe7E0jY0VZFWDZc/hzEvEF6X35QQHyOkVUsgQlvdJQ==;EndpointSuffix=core.windows.net";
+        static string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=memoriesanonima;AccountKey={key};EndpointSuffix=core.windows.net";
  
         static string shareReference = "memories";
         //static string shareReference = "Documents";
