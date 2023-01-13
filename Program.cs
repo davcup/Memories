@@ -12,7 +12,6 @@ using MongoDB.Bson;
 using System.Security.Authentication;
 using System.Security.Cryptography;
 using Microsoft.WindowsAzure.Storage.Auth;
-//-p "\\CICCIANTE\Immagini" -fake
 
 namespace SyncFiles
 {
@@ -33,21 +32,6 @@ namespace SyncFiles
             _startDir = pars["-p"];
 
             MainSendToCloud(_startDir, _startDir+pars["-s"]);
-        }
-
-        private static void AddProperties()
-        {
-            //var credentials = new StorageCredentials("bacpacimportprod", "4LHk6SOlkoRTgOsZeNpZfZLlzRrC7yZn3hwjZn9VYlIsvQpwKEQ6n4mXcAhuHcXXewuAIOlHNbahq2OEVO5p6A==");
-            var credentials = new StorageCredentials("showmeplatform", "zuyWF7uMWCGNXZDRFyKvGV/+fejVPydNeDwqekIlt9o6nmy0Iqzm2DReoKw+VmVTFslfVg/p1AX5ukpwc6IF0Q==");
-            var account = new CloudStorageAccount(credentials, true);
-
-            //string assetTest = "SharedAccessSignature=sv=2019-02-02&ss=btqf&srt=sco&st=2020-07-07T11%3A59%3A56Z&se=2020-07-08T11%3A59%3A56Z&sp=rl&sig=Fi982zUjGxsOQojvrs3Q%2Bh3hX9nEyQCyiZ14dnAy0Uk%3D;BlobEndpoint=https://bacpacimportprod.blob.core.windows.net/;FileEndpoint=https://bacpacimportprod.file.core.windows.net/;QueueEndpoint=https://bacpacimportprod.queue.core.windows.net/;TableEndpoint=https://bacpacimportprod.table.core.windows.net/";
-            //CloudStorageAccount storageAccount = CloudStorageAccount.Parse(assetTest);
-
-            var client = account.CreateCloudBlobClient();
-            var properties = client.GetServicePropertiesAsync().Result;
-            properties.DefaultServiceVersion = "2019-07-07";
-            client.SetServicePropertiesAsync(properties).Wait();
         }
 
         static void MainSendToCloud(string path, string filter)
@@ -143,50 +127,6 @@ namespace SyncFiles
                     return await UploadFile(file, dirCloud);
                 }
                 return "KO";
-            }
-        }
-
-        static string CalculateMD5(string filename)
-        {
-
-                using (var stream = File.OpenRead(filename))
-                {
-                    byte[] retrievedBuffer = new byte[stream.Length];
-                    stream.Read(retrievedBuffer, 0, (int)stream.Length);
-                                // Validate MD5 Value
-                    var md5Check = System.Security.Cryptography.MD5.Create();
-                    md5Check.TransformBlock(retrievedBuffer, 0, retrievedBuffer.Length, null, 0);     
-                    md5Check.TransformFinalBlock(new byte[0], 0, 0);
-
-                    // Get Hash Value
-                    byte[] hashBytes = md5Check.Hash;
-                    string hashVal = Convert.ToBase64String(hashBytes);
-
-                    return hashVal;
-            }
-            // using (var md5 = MD5.Create())
-            // {
-            //     using (var stream = File.OpenRead(filename))
-            //     {
-            //         var hash = md5.ComputeHash(stream);
-            //         return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
-            //     }
-            // }
-        }
-
-        public static void RenameFolders()
-        {
-            List<string> dirs = Directory.EnumerateDirectories("I:\\4TB\\Immagini\\2018").ToList();
-            foreach (var dir in dirs)
-            {
-                try
-                {
-                    var dateDir = DateTime.ParseExact(dir.Replace(Path.GetDirectoryName(dir) + "\\", ""), "dd-MM-yyyy", null);
-                    Directory.Move(dir, Path.GetDirectoryName(dir) + "\\" + dateDir.ToString("yyyy-MM-dd"));
-                }
-                catch (Exception)
-                {
-                }
             }
         }
     }

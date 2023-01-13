@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\SyncFiles.csproj": {}
+    "C:\\Prjs\\Anonima\\Memories\\SyncFiles.csproj": {}
   },
   "projects": {
-    "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\SyncFiles.csproj": {
+    "C:\\Prjs\\Anonima\\Memories\\SyncFiles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\SyncFiles.csproj",
+        "projectUniqueName": "C:\\Prjs\\Anonima\\Memories\\SyncFiles.csproj",
         "projectName": "SyncFiles",
-        "projectPath": "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\SyncFiles.csproj",
+        "projectPath": "C:\\Prjs\\Anonima\\Memories\\SyncFiles.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\obj\\",
+        "outputPath": "C:\\Prjs\\Anonima\\Memories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

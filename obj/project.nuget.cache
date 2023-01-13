@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tNQzP5sAq6LMQDneJXS/pg3GzzSR+gUv9qMKZBXLyiLUBDinX0E514VLQ/KDqHsBp+Bm0fM4LI1ITpHJNpM5iQ==",
+  "dgSpecHash": "1mEfeIoY+Lg10tHZkzIyvDXLOiljBr6kqYi5Hol1cOLTDikjkKPjyLunEx9iEnqH4Jo8FrTbZi3WTi8RYuZLpA==",
   "success": true,
-  "projectFilePath": "C:\\Prjs\\Anonima\\SyncFiles\\SyncFiles\\SyncFiles.csproj",
+  "projectFilePath": "C:\\Prjs\\Anonima\\Memories\\SyncFiles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\dnsclient\\1.0.7\\dnsclient.1.0.7.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
